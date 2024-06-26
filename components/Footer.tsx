@@ -24,8 +24,9 @@ const Footer = () => {
           achieve your goals.
         </p>
         <a
-          href="/Moksh_Joshi_Resume.pdf" 
+          href="/Moksh_Joshi_Resume.pdf"
           download="Moksh_Joshi_Resume.pdf"
+          className="mb-4"
         >
           <MagicButton
             title="My Resume"
@@ -46,7 +47,7 @@ const Footer = () => {
           Copyright © 2024 Moksh Joshi
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-3">
           {socialMedia.map((info) => (
             <div
               key={info.id}
