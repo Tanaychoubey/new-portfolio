@@ -1,5 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaLocationArrow, FaFileDownload } from "react-icons/fa";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
@@ -24,6 +23,16 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
+        <a
+          href="/Moksh_Joshi_Resume.pdf" 
+          download="Moksh_Joshi_Resume.pdf"
+        >
+          <MagicButton
+            title="My Resume"
+            icon={<FaFileDownload />}
+            position="right"
+          />
+        </a>
         <a href="mailto:mokshjoshi98@gmail.com">
           <MagicButton
             title="Let's get in touch"

@@ -12,26 +12,15 @@ const MagicButton = ({
   title,
   icon,
   position,
+  handleClick,
   otherClasses,
 }: {
   title: string;
   icon: React.ReactNode;
   position: string;
+  handleClick?: () => void;
   otherClasses?: string;
 }) => {
-   const handleClick = () => {
-     switch (title) {
-       case "Show my work":
-         window.open("https://youtu.be/G4JQqEBeIgU", "_blank");
-         break;
-       case "Another Action":
-         console.log("Another Action button clicked!");
-         break;
-       // Add more cases for different actions
-       default:
-         console.log(`${title} button clicked!`);
-     }
-   };
   return (
     <button
       className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none"
